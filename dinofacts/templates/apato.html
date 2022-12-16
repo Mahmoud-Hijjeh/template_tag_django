@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load dinotags %}
+{% block content %}
+<h1>Apatosaurus</h1>
+<p>
+Apatosaurus (deceptive lizard) is a long necked quadruped that when
+originally discovered was confused with parts of what is now called
+a Brontosaurus. Apatosaurus weighed on average {{weight}}.
+</p>
+{% dino_list "Other Big Lizards" %}
+<p>
+Let's try this again: Apatosaurus weighed on average {{weight}}.
+</p>
+{% endblock content %}

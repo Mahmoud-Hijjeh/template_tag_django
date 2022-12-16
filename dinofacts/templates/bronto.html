@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load dinotags %}
+{% block content %}
+<h1>Brontosaurus</h1>
+<p>
+Brontosaurus (thunder lizard) is a long necked quadruped whose existence
+was debated for a long time, with original finds being found to be
+composed of different animals. In 2015 the name was resurrected after
+an extensive study showed that there was a distinction between it and
+its cousin the Apatosaurus.
+</p>
+<h2>Other Dinosaurs</h2>
+{% make_ul dinosaurs %}
+{% endblock content %}

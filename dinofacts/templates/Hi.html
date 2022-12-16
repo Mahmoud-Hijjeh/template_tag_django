@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Eoraptor</h1>
+
+<p>
+    Eoraptor was one of the earliest dinosaurs and its name 
+    is based on the Greek word for "dawn".
+
+    {% comment %} Add something about height here {% endcomment %}
+
+</p>
+
+<p>
+    Some other popular dinosaurs were:
+
+    <ul>
+    {% for dino in dinosaurs %}
+        <li> {{dino|lower}} </li>
+    {% endfor %}
+    </ul>
+</p>
+
+{% endblock content %}

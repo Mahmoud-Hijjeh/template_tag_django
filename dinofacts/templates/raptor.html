@@ -1,0 +1,22 @@
+<!-- dinosoar/templates/raptor.html -->
+
+{% extends "base.html" %}
+{% load dinotags %}
+
+{% block content %}
+
+<h1>Velociraptor</h1>
+
+<p>
+    The Velociraptor (swift seizer) was made famous by their appearance
+    in the movie <i>Jurassic Park</i>. Unlike in the movie, these
+    dinosaurs were smaller, about the size of a turkey. They shared
+    something else with turkeys: they likely had feathers.
+
+</p>
+<p>
+    The first letters of our dinosaur variable are {{dinosaurs|firstletter}}.
+
+</p>
+
+{% endblock content %}
